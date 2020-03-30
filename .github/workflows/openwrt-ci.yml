@@ -109,7 +109,7 @@ jobs:
           EOF
 
           # 固件压缩:
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_TARGET_IMAGES_GZIP=y
           # CONFIG_TARGET_ROOTFS_CPIOGZ is not set
           # CONFIG_TARGET_ROOTFS_SQUASHFS is not set
@@ -117,7 +117,7 @@ jobs:
           # CONFIG_TARGET_INITRAMFS_COMPRESSION_NONE is not set
           EOF
           # 多文件系统支持:
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_PACKAGE_kmod-fs-antfs=y
           CONFIG_PACKAGE_kmod-fs-autofs4=y
           CONFIG_PACKAGE_kmod-fs-btrfs=y
@@ -144,7 +144,7 @@ jobs:
           CONFIG_PACKAGE_kmod-fuse=y
           EOF
           #WIFI Firemware支持:
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_PACKAGE_brcmfmac-firmware-4329-sdio=y
           CONFIG_PACKAGE_brcmfmac-firmware-43362-sdio=y
           CONFIG_PACKAGE_brcmfmac-firmware-43430-sdio=y
@@ -159,7 +159,7 @@ jobs:
           CONFIG_PACKAGE_edgeport-firmware=y
           EOF
           #Wireless Drivers
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_PACKAGE_kmod-brcmfmac=y
           CONFIG_BRCMFMAC_SDIO=y
           CONFIG_PACKAGE_kmod-brcmutil=y
@@ -168,7 +168,7 @@ jobs:
           CONFIG_PACKAGE_MAC80211_MESH=y
           EOF
           #Input modules支持:
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_PACKAGE_kmod-hid=y
           CONFIG_PACKAGE_kmod-hid-generic=y
           CONFIG_PACKAGE_kmod-input-core=y
@@ -184,7 +184,7 @@ jobs:
           CONFIG_PACKAGE_kmod-usbmon=y
           EOF
           # 常用LuCI插件选择:
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           CONFIG_PACKAGE_luci-app-accesscontrol=y
           CONFIG_PACKAGE_luci-app-arpbind=y
@@ -211,12 +211,12 @@ jobs:
           CONFIG_PACKAGE_luci-app-wol=y
           EOF
           # LuCI主题:
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-bootstrap=y
           EOF
           # 常用软件包:写入mmc需要
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_PACKAGE_libzstd=y
           CONFIG_PACKAGE_liblzo=y
           CONFIG_PACKAGE_curl=y
@@ -258,7 +258,7 @@ jobs:
           CONFIG_PACKAGE_perlbase-unicore=y         
           EOF
           #wifi tools
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_PACKAGE_kmod-brcmfmac=y
           CONFIG_BRCMFMAC_SDIO=y
           CONFIG_PACKAGE_kmod-brcmutil=y
